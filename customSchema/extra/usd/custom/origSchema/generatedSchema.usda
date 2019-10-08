@@ -1,0 +1,16 @@
+#usda 1.0
+(
+    "WARNING: THIS FILE IS GENERATED.  DO NOT EDIT."
+)
+
+class "SampleBasePrim"
+{
+    int intAttr = 0
+}
+
+class ConcreteBasePrim "ConcreteBasePrim"
+{
+    int intAttr = 0
+    int val = 0
+}
+
