@@ -17,6 +17,7 @@ shader = UsdShade.Shader.Define(stage, matPath.AppendChild('testShader'))
 
 # Shaderのアトリビュート設定
 # 色をつけただけの基本のPBRシェーダーを作る
+# https://graphics.pixar.com/usd/docs/UsdPreviewSurface-Proposal.html#UsdPreviewSurfaceProposal-PreviewSurface
 shader.CreateIdAttr('UsdPreviewSurface')
 shader.CreateInput('diffuseColor', Sdf.ValueTypeNames.Color3f).Set(Gf.Vec3f(0, 1, 0))
 shader.CreateInput('metalic', Sdf.ValueTypeNames.Float).Set(0.9)
